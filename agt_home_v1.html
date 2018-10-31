@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script language="JavaScript" src="js/myscript.js?n=1"></script>
+  <style>
+      
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="page-header text-center">
+    <h1>ANGGOTA KSP-S2</h1>      
+  </div>
+        
+</div>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="panel panel-success">
+        <div class="panel-heading">TAMBAH ANGGOTA</div>
+        <div class="panel-body">
+		<a href="agt_formtambah_v1.html"><img src="agt_ft.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+		</div>
+        
+      </div>
+    </div>
+    <div class="col-sm-3"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">DAFTAR ANGGOTA</div>
+        <div class="panel-body">
+		<a href="agt_pdf_v1.php"><img src="agt_fr.png" class="img-responsive" style="width:100%" alt="Image"></a>
+		</div>
+        
+      </div>
+    </div>
+	<div class="col-sm-3"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">DATA ANGGOTA</div>
+        <div class="panel-body">
+		<a href="#mymodal" type="button" data-toggle="modal" data-target="#myModal"><img src="agt_fd.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+		<!--<img src="agt_data.jpg" class="img-responsive" style="width:100%" alt="Image" type="button" data-toggle="modal" data-target="#myModal">-->
+		</div>
+       
+      </div>
+    </div>
+    <div class="col-sm-3"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">EDIT DATA ANGGOTA</div>
+        <div class="panel-body">
+		<a href="#mymodal_1" type="button" data-toggle="modal" data-target="#myModal_1"><img src="agt_fe.jpg" class="img-responsive" style="width:100%" alt="Image"></a>
+		</div>
+        
+      </div>
+    </div>
+	
+  </div>
+</div><br>
+
+<br>
+
+<footer class="container-fluid text-center">
+ 
+  <p>MENOLONG BUKAN MENGGOLONG</p>  
+</footer>
+
+</body>
+
+  <!-- The Modal Data Agt-->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Ketik Kode Anggota!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+		<form method="post" action="agt_dataagt_v1.php">
+          <div class="form-group">
+		  <label for="Kode_Anggota">Kode Anggota :</label>
+		  <input type="varchar" class="form-control" id="KodeAgt" placeholder="Ketik Kode Anggota" name="Kode_Anggota1">
+		  <br>
+		  <button type="submit" class="btn btn-default">Submit</button>
+		</form>
+		</div>
+        </div>
+        
+        <!-- Modal footer 
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>-->
+        
+      </div>
+    </div>
+  </div>
+  <!--Modal Edit-->
+  <div class="modal fade" id="myModal_1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Ketik Kode Anggota!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+		<form method="post" action="agt_editdtagt_v1.php">
+          <div class="form-group">
+		  <label for="Kode_Anggota">Kode Anggota :</label>
+		  <input type="varchar" class="form-control" id="KodeAgt" placeholder="Ketik Kode Anggota" name="Kode_Anggota" >
+		  <br>
+		  <button type="submit" class="btn btn-default">Submit</button>
+		</form>
+		</div>
+        </div>
+        
+        <!-- Modal footer 
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>-->
+        
+      </div>
+    </div>
+  </div>
+</html>
